@@ -5,13 +5,15 @@
       {{ .Site.Params.since }} -
     {{ end }}
     {{ now.Year }}
-    {{ with .Site.Params.author }} {{ . }} {{ end }}
     ·
     {{ if (and .Site.Params.license) }}
       {{ i18n "licensed_under" }} {{ .Site.Params.license | safeHTML }}
     ·
     {{ end }}
-    {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    Dom Chester Sound Ltd is registered in England and Wales (Company No. 11141388) <br>
+    Registered Office: 20 St Johns St, Chichester, England, PO19 1UP
+    VAT No. 329750579
     {{ if (and .Site.Params.commit .GitInfo) }}
       [<a href="{{ .Site.Params.commit }}/{{ .GitInfo.Hash }}">{{ .GitInfo.AbbreviatedHash }}</a>]
     {{ end }}
