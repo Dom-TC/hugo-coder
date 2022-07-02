@@ -24,6 +24,14 @@
     text-transform: uppercase;
   }
 
+  .navigation-subheading {
+    display: inline;
+    font-size: 1.3rem;
+    font-family: $font-family;
+    font-weight: 600;
+    color: $fg-color;
+  }
+
   .navigation-list {
     float: right;
     list-style: none;
